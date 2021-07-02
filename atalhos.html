@@ -1,0 +1,32 @@
+<head>
+    <title>Atalhos de teclado</title>
+
+    <script language="JavaScript">
+        document.addEventListener("keydown", function(event) {
+            event.preventDefault()
+            if (event.ctrlKey) {
+                console.log('ctrl');
+            }
+            if (event.altKey) {
+                console.log('alt');
+            }
+            if (event.shiftKey) {
+                console.log('shift');
+            }
+            if (event.ctrlKey && event.key == "a") {
+                console.log('ctrl + a');
+            }
+            if (event.ctrlKey && event.key == "s") {
+
+                console.log('ctrl + s');
+            }
+            if (event.which == 13) {
+                console.log('a tecla enter foi pressionada');
+            }
+        });
+    </script>
+</head>
+
+</body>
+
+</html>
